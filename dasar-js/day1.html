@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="azqi" id="azqi" ></div>
+
+ <input type="text" placeholder="masukkan usia" >
+    <script>
+        let number= 10;
+
+        var text1 = 'Ini text pertama menggunakan single let nilai quotes ${number}'
+        let text2 = "Ini text menggunakan double quotes ${number}"
+        const text3= `Ini text menggunakan Backtips vslue dari number = ${number}`
+
+        let boolean = true
+
+        // Symbol digunakan untuk mengunakan karakter acak sepertii vachar
+
+        console.log(number)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        // var upin =Document.getElementById(#azqi)
+
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+
+        let nilaiBelumDiisi;
+        console.log(nilaiBelumDiisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['apel','semangka','jeruk']
+        console.log(array[0])
+
+        function tambah(a,b){
+            console.log(a+b)
+        }
+
+        let siswa = {
+            nama:'Azqi',
+            usia:20,
+            asal:'bumi'
+        }
+        console.log(siswa.nama,siswa.usia)
+
+        let number1 = 10
+        let number2 = 4
+
+        // aritmatika
+        console.log(number1+number2)
+        console.log(number1-number2)
+        console.log(number1*number2)
+        console.log(number1/number2)
+        console.log(number1%number2)
+
+        // perbandingan
+        console.log(number1 == number2)
+        // tanda seru menyertakan 'tidak' (apakah nomor 1 'tidak' sama dengan 2)
+        console.log(number1 != number2)
+        console.log(number1 > number2)
+        console.log(number1 < number2)
+        console.log(number1 >= number2)
+        console.log(number1 <= number2)
+
+
+        console.log(number1 != number2 && number1 > number2)
+        console.log(number1 == number2 || number1 != number2)
+        // let sambel = `I will display &euro`
+        // console.log(sambel)
+        number1 = number1 + number2
+        console.log(number1)
+        number1 += number2
+        console.log(number1)
+
+        let object = null
+        let cekObject = object?.nama
+        console.log(cekObject)
+
+        let cekUmur = (siswa.usia >= 18) ? 'Dewasa' : "Anak-anak"
+        console.log(cekUmur)
+
+        if(siswa.usia >= 18){
+            console.log("Dewasa")
+        }else if(siswa.usia >= 8){
+            console.log("Remaja")
+        }else{
+            console.log("Anak-anak")
+        }
+
+        switch(siswa.asal){
+            case "bumi":
+                console.log("Perusahaan")
+                break;
+            
+            case "SMK Wikrama":
+                console.log("Sekolah")
+                break;
+                
+            default :
+            console.log('umum')
+            }
+            
+    </script>
+</body>
+</html>

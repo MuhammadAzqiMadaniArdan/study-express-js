@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Buat sebuah fungsi filter untuk mencari buku dengan genre fiksi
+        const books = [
+            {
+                title: "Harry Poter tunkang reporter",
+                author: "J.K Rowling",
+                genre : "Fantasy",
+                year : 1997
+            },
+            {
+                title: "To kill a mocking bird",
+                author: "Harper Lee",
+                genre : "Fiction",
+                year : 1960
+            },
+            {
+                title: "The Great Gastby",
+                author: "F.Scott Fitzgerald",
+                genre : "Fiction",
+                year : 1925
+            }
+        ];
+        
+        let booksGenre= books.filter((books) => {
+            if (books.genre == 'Fiction'){
+                console.log(books.title);
+            }})
+
+        let booksGenre2= books.filter((books) => books.genre == "Fiction")
+        booksGenre2.forEach((booksGenre2) => console.log(books.title))
+
+        // fungsi js map
+        // barang diskon 10%
+        const products = [
+            {
+                name:"Laptop",
+                price: 1000
+            },
+            {
+                name:"SmartPhone",
+                price: 500,
+            },
+            {
+                name:"Tablet",
+                price: 300,
+            },
+        ];
+
+
+        let habisDiskon = products.map((products) => products.price *= 0.9)
+        let x = 0
+        habisDiskon = products.filter((products) => products.price = habisDiskon[x++])
+        habisDiskon.forEach((habisDiskon) => console.log(`${habisDiskon.name} seharga ${habisDiskon.price}`))
+
+        console.log(habisDiskon)
+
+        // membuat fungis js buat nyatuin prod and newprod and make a rata
+        const newProducts = [
+            {
+            name:"Kulkas",
+            price: 200
+            },
+            {
+            name:"TV",
+            price: 300
+            }
+        ];
+
+        let endProducts = new Array(products,newProducts)
+        console.log(endProducts)
+        
+        let totalProducts = endProducts[[products.price]];
+        console.log(totalProducts)
+
+        </script>
+</body>
+</html>
